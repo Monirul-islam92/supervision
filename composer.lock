@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcdbe9be7aec9e37a7c09922cee8844a",
+    "content-hash": "f141a3945c03c17895f7ebaa38f9022d",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -162,40 +162,44 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "4.0.0",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "4063f08ca434efac12bf7a3db0d370b1c451345b"
+                "reference": "13a8e5acff26b0a87d353042170b48976da004a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4063f08ca434efac12bf7a3db0d370b1c451345b",
-                "reference": "4063f08ca434efac12bf7a3db0d370b1c451345b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/13a8e5acff26b0a87d353042170b48976da004a1",
+                "reference": "13a8e5acff26b0a87d353042170b48976da004a1",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/streams": "1.*",
+                "ext-json": "*",
+                "guzzlehttp/streams": "~2.1",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "4.*",
-                "psr/log": "~1"
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0.x-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -219,20 +223,24 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-03-29T23:11:36+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/4.x"
+            },
+            "time": "2016-07-15T17:44:18+00:00"
         },
         {
             "name": "guzzlehttp/streams",
-            "version": "1.5.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/streams.git",
-                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f"
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/streams/zipball/fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
-                "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/f91b721d73f0e561410903b3b3c90a5d0e40b534",
+                "reference": "f91b721d73f0e561410903b3b3c90a5d0e40b534",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +252,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -272,7 +280,12 @@
                 "Guzzle",
                 "stream"
             ],
-            "time": "2014-08-10T23:57:01+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/streams/issues",
+                "source": "https://github.com/guzzle/streams/tree/master"
+            },
+            "abandoned": true,
+            "time": "2014-08-17T21:15:53+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -3998,5 +4011,6 @@
     "platform": {
         "php": ">=5.6.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
